@@ -22,9 +22,7 @@ const Home = () => {
         const end = parseInt(forEnd);
         if ((end-start >= 1000) || (start-end >= 1000)) {
             setResult('Over 1000');
-        }
-
-        if (!isNaN(start) && !isNaN(end)) {
+        } else if (!isNaN(start) && !isNaN(end)) {
             let result = 0;
             for (let i = start; i < end; i++) {
                 result += 1
